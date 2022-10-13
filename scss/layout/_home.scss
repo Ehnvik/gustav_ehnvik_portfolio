@@ -4,7 +4,11 @@
   &__section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    @include c.tablet {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
   }
 
   &__image {
@@ -14,6 +18,9 @@
     max-width: 750px;
     border-radius: 50%;
     margin-top: 15px;
+    @include c.tablet {
+      margin: 30px 60px;
+    }
   }
 
   &__name-title {
@@ -23,6 +30,10 @@
     margin: 35px 15px;
     font-family: c.$titleFont;
     font-weight: 500;
+    @include c.desktop {
+      width: 70%;
+      margin: 40px auto;
+    }
 
     div {
       font-size: 35px;
@@ -98,6 +109,11 @@
     font-size: 25px;
     font-family: c.$titleFont;
     margin: 30px 0px 20px 10px;
+    @include c.tablet {
+      width: 60%;
+      margin: 30px auto;
+      text-align: start;
+    }
 
     i {
       color: c.$seconadaryBgColor;
@@ -109,5 +125,9 @@
     padding: 0px 15px;
     font-size: 18px;
     margin: 20px 0px;
+    @include c.tablet {
+      width: 60%;
+      margin: 15px auto;
+    }
   }
 }
