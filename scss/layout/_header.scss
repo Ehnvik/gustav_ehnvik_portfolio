@@ -71,16 +71,17 @@
     width: 250px;
     height: 100vh;
     margin: 0;
-    padding: 90px 0;
+    padding-top: 35%;
     list-style: none;
     background-color: c.$seconadaryBgColorOpacity;
     transition-duration: .25s;
   }
   .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 15px 0px;
     color: c.$secondaryColor;
-    font-size: 20px;
+    font-family: c.$titleFont;
+    font-size: 27px;
     font-weight: 800;
     text-decoration: none;
     transition-duration: .25s;
