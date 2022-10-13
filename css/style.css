@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: end;
-  background-color: #5C7E96;
+  background-color: #5c7e96;
   height: 10vh;
 }
 .container__header .navbar__brand {
@@ -71,7 +71,7 @@
     margin: 0;
     padding-top: 35%;
     list-style: none;
-    background-color: rgba(92, 126, 150, 0.4);
+    background-color: rgba(92, 126, 150, 0.6);
     transition-duration: 0.25s;
   }
   .container__header .menu__item {
@@ -167,7 +167,7 @@
     transition: all 0.25s ease-in-out;
   }
   .footer__cv .cv-pdf:hover {
-    color: #5C7E96;
+    color: #5c7e96;
   }
 }
 .footer__title {
@@ -209,7 +209,7 @@
     transition: all 0.35s ease-in-out;
   }
   .footer__social-links .footer__social-links-list li i:hover {
-    background-color: #5C7E96;
+    background-color: #5c7e96;
   }
 }
 
