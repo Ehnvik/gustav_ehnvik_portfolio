@@ -16,6 +16,22 @@
     @include c.tablet {
       flex-direction: row;
       justify-content: space-around;
+      align-items: start;
+      height: 20vh;
+      gap: 25px;
+    }
+  }
+
+  &__education {
+    @include c.tablet {
+      width: 33%;
+    }
+    p {
+      text-align: center;
+
+      @include c.tablet {
+        text-align: start;
+      }
     }
   }
 
@@ -23,6 +39,12 @@
     .cv-pdf {
       color: c.$secondaryColor;
       text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+      @include c.desktop {
+        transition: all 0.35s ease-in-out;
+        &:hover {
+          color: c.$seconadaryBgColor;
+        }
+      }
     }
   }
 
@@ -32,6 +54,11 @@
     margin: 10px 0px 0px 0px;
     text-align: center;
     font-weight: 400;
+
+    @include c.tablet {
+      margin-top: 20px;
+      text-align: start;
+    }
   }
 
   &__social-links {
@@ -55,10 +82,15 @@
           text-align: center;
           background: #8f8f8f;
           text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+
+          @include c.desktop {
+            transition: all 0.35s ease-in-out;
+            &:hover {
+              background-color: c.$seconadaryBgColor;
+            }
+          }
         }
       }
     }
   }
 }
-
-// Tablet
