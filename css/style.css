@@ -12,7 +12,7 @@
 .container__header .navbar__brand i {
   font-size: 200%;
   color: #fafafa;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #383838;
 }
 @media screen and (max-width: 768px) {
   .container__header #menu__toggle {
@@ -83,7 +83,7 @@
     font-weight: 800;
     text-decoration: none;
     transition-duration: 0.25s;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #383838;
   }
 }
 
@@ -99,11 +99,10 @@
   }
   .container__header .navbar__brand {
     margin-left: 15px;
-    transition: all 0.35s ease-in-out;
-    text-shadow: 2px 2px 4px #000000;
+    transition: all 0.25s ease-in-out;
   }
   .container__header .navbar__brand:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
   }
   .container__header ul {
     display: flex;
@@ -118,7 +117,7 @@
     text-decoration: none;
     color: #fafafa;
     font-size: 20px;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #383838;
     transition: all 0.2s ease-in-out;
   }
   .container__header ul li a:hover {

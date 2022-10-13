@@ -13,7 +13,7 @@
         i {
             font-size: 200%;
             color: c.$secondaryColor;
-            text-shadow: 2px 2px 4px #000000;
+            text-shadow: 2px 2px 4px #383838;
         }
     }
 
@@ -88,7 +88,7 @@
     font-weight: 800;
     text-decoration: none;
     transition-duration: .25s;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px #383838;
   }
     }
 }
@@ -108,10 +108,9 @@
 
         .navbar__brand {
             margin-left: 15px;
-            transition: all 0.35s ease-in-out;
-            text-shadow: 2px 2px 4px #000000;
+            transition: all 0.25s ease-in-out;
             &:hover {
-                transform: scale(1.2);
+                transform: scale(1.15);
             }
         }
 
@@ -126,7 +125,7 @@
                 text-decoration: none;
                 color: c.$secondaryColor;
                 font-size: 20px;
-                text-shadow: 2px 2px 4px #000000;
+                text-shadow: 2px 2px 4px #383838;
                 transition: all 0.20s ease-in-out;
                 &:hover {
                     text-shadow: none;
