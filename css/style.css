@@ -172,7 +172,7 @@
 }
 .footer__title {
   font-family: "Exo", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   margin: 10px 0px 0px 0px;
   text-align: center;
   font-weight: 400;
@@ -211,6 +211,100 @@
   .footer__social-links .footer__social-links-list li i:hover {
     background-color: #5c7e96;
   }
+}
+.footer__text {
+  font-size: 18px;
+}
+
+.home__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__image {
+  background-position: center;
+  background-size: cover;
+  max-height: 590px;
+  max-width: 750px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.home__name-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 35px 15px;
+  font-family: "Exo", sans-serif;
+  font-weight: 500;
+}
+.home__name-title div {
+  font-size: 35px;
+  text-shadow: 2px 2px 4px #7e7e7e;
+}
+.home__name-title div:nth-child(7) {
+  border-right: 3px solid #555555;
+  text-shadow: 2px 2px 4px #7e7e7e;
+}
+.home__name-title div:nth-child(1) {
+  animation: myAnimation 0.2s forwards;
+}
+.home__name-title div:nth-child(2) {
+  animation: myAnimation 0.4s forwards;
+}
+.home__name-title div:nth-child(3) {
+  animation: myAnimation 0.6s forwards;
+}
+.home__name-title div:nth-child(4) {
+  animation: myAnimation 0.8s forwards;
+}
+.home__name-title div:nth-child(5) {
+  animation: myAnimation 1s forwards;
+}
+.home__name-title div:nth-child(6) {
+  animation: myAnimation 1.2s forwards;
+}
+.home__name-title div:nth-child(7) {
+  animation: myAnimation 1.4s forwards;
+}
+.home__name-title div:nth-child(8) {
+  animation: myAnimation 1.6s forwards;
+}
+.home__name-title div:nth-child(9) {
+  animation: myAnimation 1.8s forwards;
+}
+.home__name-title div:nth-child(10) {
+  animation: myAnimation 2s forwards;
+}
+.home__name-title div:nth-child(11) {
+  animation: myAnimation 2.2s forwards;
+}
+.home__name-title div:nth-child(12) {
+  animation: myAnimation 2.4s forwards;
+}
+.home__name-title div:nth-child(13) {
+  animation: myAnimation 2.6s forwards;
+}
+@keyframes myAnimation {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+.home__info-title {
+  font-size: 25px;
+  font-family: "Exo", sans-serif;
+  margin: 30px 0px 20px 10px;
+}
+.home__info-title i {
+  color: #5c7e96;
+  margin-right: 5px;
+}
+.home__info-text {
+  padding: 0px 15px;
+  font-size: 18px;
+  margin: 20px 0px;
 }
 
 body {

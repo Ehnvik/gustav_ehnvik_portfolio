@@ -1,0 +1,113 @@
+@use "../components/" as c;
+
+.home {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    background-position: center;
+    background-size: cover;
+    max-height: 590px;
+    max-width: 750px;
+    border-radius: 50%;
+    margin-top: 15px;
+  }
+
+  &__name-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 35px 15px;
+    font-family: c.$titleFont;
+    font-weight: 500;
+
+    div {
+      font-size: 35px;
+      text-shadow: 2px 2px 4px #7e7e7e;
+      &:nth-child(7) {
+        border-right: 3px solid c.$primaryColor;
+        text-shadow: 2px 2px 4px #7e7e7e;
+      }
+    }
+    div:nth-child(1) {
+      animation: myAnimation 0.2s forwards;
+    }
+    div:nth-child(2) {
+      animation: myAnimation 0.4s forwards;
+    }
+
+    div:nth-child(3) {
+      animation: myAnimation 0.6s forwards;
+    }
+
+    div:nth-child(4) {
+      animation: myAnimation 0.8s forwards;
+    }
+
+    div:nth-child(5) {
+      animation: myAnimation 1s forwards;
+    }
+
+    div:nth-child(6) {
+      animation: myAnimation 1.2s forwards;
+    }
+
+    div:nth-child(7) {
+      animation: myAnimation 1.4s forwards;
+    }
+
+    div:nth-child(8) {
+      animation: myAnimation 1.6s forwards;
+    }
+
+    div:nth-child(9) {
+      animation: myAnimation 1.8s forwards;
+    }
+
+    div:nth-child(10) {
+      animation: myAnimation 2s forwards;
+    }
+
+    div:nth-child(11) {
+      animation: myAnimation 2.2s forwards;
+    }
+
+    div:nth-child(12) {
+      animation: myAnimation 2.4s forwards;
+    }
+
+    div:nth-child(13) {
+      animation: myAnimation 2.6s forwards;
+    }
+
+    @keyframes myAnimation {
+      0% {
+        transform: rotatey(0deg);
+      }
+
+      100% {
+        transform: rotatey(360deg);
+      }
+    }
+  }
+
+  &__info-title {
+    font-size: 25px;
+    font-family: c.$titleFont;
+    margin: 30px 0px 20px 10px;
+
+    i {
+      color: c.$seconadaryBgColor;
+      margin-right: 5px;
+    }
+  }
+
+  &__info-text {
+    padding: 0px 15px;
+    font-size: 18px;
+    margin: 20px 0px;
+  }
+}

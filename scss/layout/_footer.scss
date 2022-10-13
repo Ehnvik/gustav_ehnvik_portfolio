@@ -50,7 +50,7 @@
 
   &__title {
     font-family: c.$titleFont;
-    font-size: 20px;
+    font-size: 22px;
     margin: 10px 0px 0px 0px;
     text-align: center;
     font-weight: 400;
@@ -92,5 +92,9 @@
         }
       }
     }
+  }
+
+  &__text {
+    font-size: 18px;
   }
 }
