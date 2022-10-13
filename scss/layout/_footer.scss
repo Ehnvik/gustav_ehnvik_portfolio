@@ -40,7 +40,7 @@
       color: c.$secondaryColor;
       text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
       @include c.desktop {
-        transition: all 0.35s ease-in-out;
+        transition: all 0.25s ease-in-out;
         &:hover {
           color: c.$seconadaryBgColor;
         }
