@@ -136,6 +136,12 @@
   align-items: center;
   margin: 0px 15px;
 }
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 .footer__cv .cv-pdf {
   color: #fafafa;
   text-shadow: 2px 2px 4px #383838;
@@ -145,6 +151,7 @@
   font-size: 20px;
   margin: 10px 0px 0px 0px;
   text-align: center;
+  font-weight: 400;
 }
 .footer__social-links .footer__social-links-list {
   display: flex;

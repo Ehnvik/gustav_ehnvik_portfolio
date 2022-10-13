@@ -1,54 +1,64 @@
 @use "../components/" as c;
 
+// Mobile
+
 .footer {
-    background-color: c.$thirdBgColor;
-    color: c.$secondaryColor;
-    height: 15%;
+  background-color: c.$thirdBgColor;
+  color: c.$secondaryColor;
+  height: 15%;
 
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px 15px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+
+    @include c.tablet {
+      flex-direction: row;
+      justify-content: space-around;
     }
+  }
 
-    &__cv {
-        .cv-pdf {
-            color: c.$secondaryColor;
-            text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+  &__cv {
+    .cv-pdf {
+      color: c.$secondaryColor;
+      text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+    }
+  }
+
+  &__title {
+    font-family: c.$titleFont;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__social-links {
+    .footer__social-links-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-left: 0;
+      gap: 15px;
+
+      li {
+        list-style: none;
+
+        i {
+          color: c.$secondaryColor;
+          width: 32px;
+          padding: 12px 0;
+          border-radius: 50%;
+          font-size: 15px;
+          line-height: 7px;
+          text-align: center;
+          background: #8f8f8f;
+          text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
         }
+      }
     }
-
-    &__title {
-        font-family: c.$titleFont;
-        font-size: 20px;
-        margin: 10px 0px 0px 0px;
-        text-align: center;
-    }
-
-    &__social-links {
-        .footer__social-links-list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            padding-left: 0;
-            gap: 15px;
-
-            li {
-                list-style: none;
-
-                i {
-                    color: c.$secondaryColor;
-                    width: 32px;
-                    padding: 12px 0;
-                    border-radius: 50%;
-                    font-size: 15px;
-                    line-height: 7px;
-                    text-align: center;
-                    background: #8f8f8f;
-                    text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
-                }
-            }
-        }
-    }
+  }
 }
+
+// Tablet

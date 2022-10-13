@@ -1,83 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/bc5eefc1c7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bc5eefc1c7.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="script.js"></script>
     <title>Gustav Ehnvik Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="container__header">
+      <a class="navbar__brand" href="index.html"
+        ><i class="fa-solid fa-briefcase fa-xl"></i
+      ></a>
+      <nav>
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <ul class="menu__box">
+          <li><a class="menu__item" href="index.html">Hem</a></li>
+          <li><a class="menu__item" href="menu.html">Meny</a></li>
+          <li><a class="menu__item" href="catering.html">Catering</a></li>
+          <li><a class="menu__item" href="contact.html">Kontakta oss</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <header class="container__header">
-            <a class="navbar__brand" href="index.html"><i class="fa-solid fa-briefcase fa-xl"></i></a>
-            <nav>
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-                <ul class="menu__box">
-                    <li><a class="menu__item" href="index.html">Hem</a></li>
-                    <li><a class="menu__item" href="menu.html">Meny</a></li>
-                    <li><a class="menu__item" href="catering.html">Catering</a></li>
-                    <li><a class="menu__item" href="contact.html">Kontakta oss</a></li>
-                </ul>
-                
-            </nav>
-        </header>
-
-
-        <footer class="footer">
-            <section class="footer__container">
-                <article class="footer__education">
-                    <h5 class="footer__title">Utbildning</h5>
-                    <p>
-                        Jag studerar till webbutvecklare inom e-handel på Medieinstitutet. När jag är klar med utbildningen så kommer jag att
-                        vara ubildad i HTML, CSS, Javascript, React och PHP.
-                    </p>
-                </article>
-                <article class="footer__cv">
-                    <h5 class="footer__title">CV</h5>
-                    <p>
-                        Intresserad av mitt CV? Ladda ner det här:
-                        <a href="./assets/cv/gustav-ehnvik-cv.pdf" target="_blank" class="cv-pdf">
-                            <i class="fa fa-download" aria-hidden="true"></i>
-                            <span class="sr-only">Länk till CV.</span>
-                        </a>
-                    </p>
-                </article>
-                <article class="footer__social-links">
-                    <h5 class="footer__title">Sociala medier</h5>
-                    <ul class="footer__social-links-list">
-                        <li>
-                            <a target="_blank" href="#">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="#">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                                <span class="sr-only">Twitter</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="#">
-                                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                <span class="sr-only">LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="#">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only">Instagram</span>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </footer>
-        
-</body>
+    <footer class="footer">
+      <section class="footer__container">
+        <article class="footer__education">
+          <h5 class="footer__title">Utbildning</h5>
+          <p>
+            Jag studerar till webbutvecklare inom e-handel på Medieinstitutet.
+            När jag är klar med utbildningen så kommer jag att vara ubildad i
+            HTML, CSS, Javascript, React och PHP.
+          </p>
+        </article>
+        <article class="footer__cv">
+          <h5 class="footer__title">CV</h5>
+          <p>
+            Intresserad av mitt CV? Ladda ner det här:
+            <a
+              href="./assets/cv/gustav-ehnvik-cv.pdf"
+              target="_blank"
+              class="cv-pdf">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              <span class="sr-only">Länk till CV.</span>
+            </a>
+          </p>
+        </article>
+        <article class="footer__social-links">
+          <h5 class="footer__title">Sociala medier</h5>
+          <ul class="footer__social-links-list">
+            <li>
+              <a target="_blank" href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </footer>
+  </body>
 </html>

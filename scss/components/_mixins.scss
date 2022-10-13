@@ -11,3 +11,10 @@
         @content;
     }
 }
+
+
+@mixin desktop {
+    @media screen and (min-width: bp.$breakPoint-desktop) {
+        @content;
+    }
+}
