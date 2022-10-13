@@ -13,7 +13,7 @@
         i {
             font-size: 200%;
             color: c.$secondaryColor;
-            text-shadow: 2px 2px 4px #383838;
+            text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
         }
     }
 
@@ -88,7 +88,7 @@
     font-weight: 800;
     text-decoration: none;
     transition-duration: .25s;
-    text-shadow: 2px 2px 4px #383838;
+    text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
   }
     }
 }
@@ -123,9 +123,10 @@
                 margin: 0px 10px;
                 a {
                 text-decoration: none;
+                font-family: c.$titleFont;
                 color: c.$secondaryColor;
                 font-size: 20px;
-                text-shadow: 2px 2px 4px #383838;
+                text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
                 transition: all 0.20s ease-in-out;
                 &:hover {
                     text-shadow: none;

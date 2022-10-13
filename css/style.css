@@ -115,6 +115,7 @@
   }
   .container__header ul li a {
     text-decoration: none;
+    font-family: "Exo", sans-serif;
     color: #fafafa;
     font-size: 20px;
     text-shadow: 2px 2px 4px #383838;
@@ -124,6 +125,49 @@
     text-shadow: none;
   }
 }
+.footer {
+  background-color: #525252;
+  color: #fafafa;
+  height: 15%;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 15px;
+}
+.footer__cv .cv-pdf {
+  color: #fafafa;
+  text-shadow: 2px 2px 4px #383838;
+}
+.footer__title {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  margin: 10px 0px 0px 0px;
+  text-align: center;
+}
+.footer__social-links .footer__social-links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 0;
+  gap: 15px;
+}
+.footer__social-links .footer__social-links-list li {
+  list-style: none;
+}
+.footer__social-links .footer__social-links-list li i {
+  color: #fafafa;
+  width: 32px;
+  padding: 12px 0;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 7px;
+  text-align: center;
+  background: #8f8f8f;
+  text-shadow: 2px 2px 4px #383838;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: #fafafa;
