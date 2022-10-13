@@ -1,0 +1,8 @@
+@use "../components/" as c;
+
+body {
+    font-family: c.$bodyFont;
+    background-color: c.$primaryBgColor;
+    color: c.$primaryColor;
+    margin: 0;
+}

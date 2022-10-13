@@ -1,3 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
+.container__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: #5C7E96;
+  height: 10vh;
+}
+.container__header .navbar__brand {
+  margin: auto 0;
+}
+.container__header .navbar__brand i {
+  font-size: 200%;
+  color: #fafafa;
+}
 
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+  left: 0;
+}
+
+.menu__btn {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 5%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fafafa;
+  transition-duration: 0.25s;
+}
+
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  margin: 0;
+  padding: 90px 0;
+  list-style: none;
+  background-color: rgba(92, 126, 150, 0.6);
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #fafafa;
+  color: #555555;
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
