@@ -33,7 +33,7 @@
     left: 0;
   }
   .container__header .menu__btn {
-    position: fixed;
+    position: absolute;
     display: flex;
     align-items: center;
     top: 20px;

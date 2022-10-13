@@ -1,138 +1,137 @@
 @use "../components/" as c;
 
 .container__header {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    background-color: c.$seconadaryBgColor;
-    height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: c.$seconadaryBgColor;
+  height: 10vh;
 
-    .navbar__brand {
-        margin: auto 0;
+  .navbar__brand {
+    margin: auto 0;
 
-        i {
-            font-size: 200%;
-            color: c.$secondaryColor;
-            text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
-        }
+    i {
+      font-size: 200%;
+      color: c.$secondaryColor;
+      text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+    }
+  }
+
+  @media screen and (max-width: c.$breakPoint-tablet) {
+    #menu__toggle {
+      opacity: 0;
+    }
+    #menu__toggle:checked + .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0deg);
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      left: 0;
+    }
+    .menu__btn {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 5%;
+      cursor: pointer;
+      z-index: 1;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: c.$primaryBgColor;
+      transition-duration: 0.25s;
+    }
+    .menu__btn > span::before {
+      content: "";
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: "";
+      top: 8px;
     }
 
-@media screen and (max-width: c.$breakPoint-tablet) {
-
-#menu__toggle {
-    opacity: 0;
-  }
-  #menu__toggle:checked + .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    left: 0;
-  }
-  .menu__btn {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    top: 20px;
-    left: 20px;
-    width: 26px;
-    height: 5%;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: c.$primaryBgColor;
-    transition-duration: .25s;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-
-  .menu__box {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 250px;
-    height: 100vh;
-    margin: 0;
-    padding-top: 35%;
-    list-style: none;
-    background-color: c.$seconadaryBgColorOpacity;
-    transition-duration: .25s;
-  }
-  .menu__item {
-    display: block;
-    padding: 15px 0px;
-    color: c.$secondaryColor;
-    font-family: c.$titleFont;
-    font-size: 27px;
-    font-weight: 800;
-    text-decoration: none;
-    transition-duration: .25s;
-    text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
-  }
+    .menu__box {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 250px;
+      height: 100vh;
+      margin: 0;
+      padding-top: 35%;
+      list-style: none;
+      background-color: c.$seconadaryBgColorOpacity;
+      transition-duration: 0.25s;
     }
+    .menu__item {
+      display: block;
+      padding: 15px 0px;
+      color: c.$secondaryColor;
+      font-family: c.$titleFont;
+      font-size: 27px;
+      font-weight: 800;
+      text-decoration: none;
+      transition-duration: 0.25s;
+      text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+    }
+  }
 }
 
-    // Desktop
+// Desktop
 
 @media screen and (min-width: c.$breakPoint-tablet) {
-    #menu__toggle {
-        display: none;
+  #menu__toggle {
+    display: none;
+  }
+
+  .container__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    .navbar__brand {
+      margin-left: 15px;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        transform: scale(1.15);
       }
-
-      .container__header {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-
-        .navbar__brand {
-            margin-left: 15px;
-            transition: all 0.25s ease-in-out;
-            &:hover {
-                transform: scale(1.15);
-            }
-        }
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            padding-left: 15px;
-            li {
-                list-style: none;
-                margin: 0px 10px;
-                a {
-                text-decoration: none;
-                font-family: c.$titleFont;
-                color: c.$secondaryColor;
-                font-size: 20px;
-                text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
-                transition: all 0.20s ease-in-out;
-                &:hover {
-                    text-shadow: none;
-                }
-                }
-            }
-        }
     }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-left: 15px;
+      li {
+        list-style: none;
+        margin: 0px 10px;
+        a {
+          text-decoration: none;
+          font-family: c.$titleFont;
+          color: c.$secondaryColor;
+          font-size: 20px;
+          text-shadow: 2px 2px 4px c.$primaryTextShadowColor;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+  }
 }
