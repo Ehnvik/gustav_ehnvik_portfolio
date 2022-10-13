@@ -13,9 +13,11 @@
         i {
             font-size: 200%;
             color: c.$secondaryColor;
+            text-shadow: 2px 2px 4px #000000;
         }
     }
-}
+
+@media screen and (max-width: c.$breakPoint-tablet) {
 
 #menu__toggle {
     opacity: 0;
@@ -63,6 +65,7 @@
     content: '';
     top: 8px;
   }
+
   .menu__box {
     display: block;
     position: fixed;
@@ -85,4 +88,51 @@
     font-weight: 800;
     text-decoration: none;
     transition-duration: .25s;
+    text-shadow: 2px 2px 4px #000000;
   }
+    }
+}
+
+    // Desktop
+
+@media screen and (min-width: c.$breakPoint-tablet) {
+    #menu__toggle {
+        display: none;
+      }
+
+      .container__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        .navbar__brand {
+            margin-left: 15px;
+            transition: all 0.35s ease-in-out;
+            text-shadow: 2px 2px 4px #000000;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-left: 15px;
+            li {
+                list-style: none;
+                margin: 0px 10px;
+                a {
+                text-decoration: none;
+                color: c.$secondaryColor;
+                font-size: 20px;
+                text-shadow: 2px 2px 4px #000000;
+                transition: all 0.20s ease-in-out;
+                &:hover {
+                    text-shadow: none;
+                }
+                }
+            }
+        }
+    }
+}

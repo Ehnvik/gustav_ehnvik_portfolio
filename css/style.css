@@ -12,88 +12,119 @@
 .container__header .navbar__brand i {
   font-size: 200%;
   color: #fafafa;
+  text-shadow: 2px 2px 4px #000000;
+}
+@media screen and (max-width: 768px) {
+  .container__header #menu__toggle {
+    opacity: 0;
+  }
+  .container__header #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .container__header #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  .container__header #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .container__header #menu__toggle:checked ~ .menu__box {
+    left: 0;
+  }
+  .container__header .menu__btn {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 5%;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .container__header .menu__btn > span,
+.container__header .menu__btn > span::before,
+.container__header .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fafafa;
+    transition-duration: 0.25s;
+  }
+  .container__header .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .container__header .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .container__header .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    margin: 0;
+    padding-top: 35%;
+    list-style: none;
+    background-color: rgba(92, 126, 150, 0.4);
+    transition-duration: 0.25s;
+  }
+  .container__header .menu__item {
+    display: block;
+    padding: 15px 0px;
+    color: #fafafa;
+    font-family: "Exo", sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    text-shadow: 2px 2px 4px #000000;
+  }
 }
 
-#menu__toggle {
-  opacity: 0;
+@media screen and (min-width: 768px) {
+  #menu__toggle {
+    display: none;
+  }
+  .container__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  .container__header .navbar__brand {
+    margin-left: 15px;
+    transition: all 0.35s ease-in-out;
+    text-shadow: 2px 2px 4px #000000;
+  }
+  .container__header .navbar__brand:hover {
+    transform: scale(1.2);
+  }
+  .container__header ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+  }
+  .container__header ul li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+  .container__header ul li a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    transition: all 0.2s ease-in-out;
+  }
+  .container__header ul li a:hover {
+    text-shadow: none;
+  }
 }
-
-#menu__toggle:checked + .menu__btn > span {
-  transform: rotate(45deg);
-}
-
-#menu__toggle:checked + .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0deg);
-}
-
-#menu__toggle:checked + .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#menu__toggle:checked ~ .menu__box {
-  left: 0;
-}
-
-.menu__btn {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 5%;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 3px;
-  background-color: #fafafa;
-  transition-duration: 0.25s;
-}
-
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 250px;
-  height: 100vh;
-  margin: 0;
-  padding-top: 35%;
-  list-style: none;
-  background-color: rgba(92, 126, 150, 0.6);
-  transition-duration: 0.25s;
-}
-
-.menu__item {
-  display: block;
-  padding: 15px 0px;
-  color: #fafafa;
-  font-family: "Exo", sans-serif;
-  font-size: 27px;
-  font-weight: 800;
-  text-decoration: none;
-  transition-duration: 0.25s;
-}
-
 body {
   font-family: Roboto, sans-serif;
   background-color: #fafafa;

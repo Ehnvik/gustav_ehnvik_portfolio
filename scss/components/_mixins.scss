@@ -1,0 +1,13 @@
+@use "../components/breakpoints" as bp;
+
+@mixin hamburger-menu {
+    @media screen and (max-width: bp.$breakPoint-noMobile){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: bp.$breakPoint-tablet) {
+        @content;
+    }
+}
